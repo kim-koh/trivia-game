@@ -18,7 +18,6 @@ function SetOfQuestions(props) {
 
     return(<div className={styles.questionsContainer}>
         {triviaQuestions.length === 0 ? <p>loading</p> : triviaQuestions.map((question, i) => 
-            <div>
                 <Question 
                     key = {question.question}
                     number = {i+1}
@@ -30,7 +29,6 @@ function SetOfQuestions(props) {
                     submitted = {props.submitted}
                     answerPoints = {props.answerPoints}
                 />
-            </div>
         )}
     </div>)
 }
