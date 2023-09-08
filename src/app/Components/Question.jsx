@@ -34,6 +34,7 @@ function Question(props) {
         <div onChange={checkAnswer}>
             {shuffledAnswers.map((item) => (
                 <AnswerChoice
+                    key = {item}
                     name = {props.number} 
                     text = {item}
                     submitted = {props.submitted}

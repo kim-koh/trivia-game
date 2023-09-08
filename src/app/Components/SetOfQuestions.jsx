@@ -20,6 +20,7 @@ function SetOfQuestions(props) {
         {triviaQuestions.length === 0 ? <p>loading</p> : triviaQuestions.map((question, i) => 
             <div>
                 <Question 
+                    key = {question.question}
                     number = {i+1}
                     type = {question.type}
                     question = {question.question}

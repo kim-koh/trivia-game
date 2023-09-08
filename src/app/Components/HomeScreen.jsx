@@ -6,7 +6,7 @@ const orbitron = Orbitron({weight:"400", subsets: ["latin"]})
 
 function HomeScreen(props) {
     return(<div className={`${styles.homeMessage}`} >
-        <h1 className={orbitron.className}>Welcome to Kim's Trivia!</h1>
+        <h1 className={orbitron.className}>Welcome to Kim&apos;s Trivia!</h1>
 
         <p>Choose a level:</p>
         <div className={styles.buttonsID}>
