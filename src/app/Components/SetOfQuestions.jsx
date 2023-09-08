@@ -19,7 +19,7 @@ function SetOfQuestions(props) {
     return(<div className={styles.questionsContainer}>
         {triviaQuestions.length === 0 ? <p>loading</p> : triviaQuestions.map((question, i) => 
                 <Question 
-                    key = {question.question}
+                    key = {question.question + question.correctAnswer}
                     number = {i+1}
                     type = {question.type}
                     question = {question.question}
